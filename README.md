@@ -1,6 +1,6 @@
 # studentcourseregistrationsystem
 A project used for demonstrating a student course registration system
-# Student-Course-Registration-System
+
 ##  Team Members & Contributions  
 | Name                           | Role                           | Contribution                         |
 |--------------------------------|--------------------------------|--------------------------------------|
