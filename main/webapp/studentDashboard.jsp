@@ -13,7 +13,7 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
 <%
-    // Get student from session (set by StudentLoginServlet or StudentSignupServlet)
+    // Get student from session (set by StudentLoginServlet or StudentSignupServlet)     session
     Student student = (Student) session.getAttribute("student");
     
     // If no student in session, try to get from parameter (for demo/testing)
