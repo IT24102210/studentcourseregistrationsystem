@@ -22,7 +22,7 @@ public class StudentEnrollmentServlet extends HttpServlet {
     private Gson gson = new Gson();
     
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) //session
             throws ServletException, IOException {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
