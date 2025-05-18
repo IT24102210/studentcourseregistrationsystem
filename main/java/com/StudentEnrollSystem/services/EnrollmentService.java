@@ -10,7 +10,7 @@ public class EnrollmentService {
     private static final String ENROLLMENTS_FILE = 
         "C:\\Users\\rasin\\Downloads\\project3\\StudentEnrollSystem\\src (9)\\src\\main\\webapp\\WEB-INF\\lib\\data\\enrollments.txt";
     
-    public List<EnrollmentRequest> getAllRequests() {
+    public List<EnrollmentRequest> getAllRequests() {  //read data  READ
         List<EnrollmentRequest> requests = new ArrayList<>();
         File file = new File(ENROLLMENT_REQUESTS_FILE);
         
@@ -75,7 +75,7 @@ public class EnrollmentService {
         return studentRequests;
     }
     
-    public synchronized boolean addRequest(EnrollmentRequest request) {
+    public synchronized boolean addRequest(EnrollmentRequest request) {  //write data CREATE
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(ENROLLMENT_REQUESTS_FILE, true))) {
             writer.write(request.toFileString());
             writer.newLine();
@@ -87,7 +87,7 @@ public class EnrollmentService {
     }
     
     public synchronized boolean updateRequestStatus(String studentName, String courseCode, String status, 
-                                                  String processingTimestamp, String processorId) {
+                                                  String processingTimestamp, String processorId) {  //UPDATE
         List<EnrollmentRequest> requests = getAllRequests();
         boolean updated = false;
         
