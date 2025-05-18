@@ -72,7 +72,7 @@ public class StudentSignupServlet extends HttpServlet {
             }
             
             // Create student object with timestamp
-            Student student = new Student(studentName, firstName, lastName, email, password, department, enrollmentYear, registrationTimestamp);
+            Student student = new Student(studentName, firstName, lastName, email, password, department, enrollmentYear, registrationTimestamp); //session
             
             // Save student in session to allow accessing the dashboard immediately
             HttpSession session = request.getSession();
