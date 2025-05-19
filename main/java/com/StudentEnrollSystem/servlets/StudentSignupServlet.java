@@ -16,7 +16,7 @@ public class StudentSignupServlet extends HttpServlet {
     private static final String FILE_PATH = "C:\\Users\\rasin\\Downloads\\project3\\StudentEnrollSystem\\src (9)\\src\\main\\webapp\\WEB-INF\\lib\\data\\students.txt";
     
     @Override
-    public void init() throws ServletException {  //CREATE
+    public void init() throws ServletException { 
         super.init();
         // Ensure the directory exists
         try {
@@ -79,7 +79,7 @@ public class StudentSignupServlet extends HttpServlet {
             session.setAttribute("student", student);
             
             // Write to file with explicit error handling
-            FileWriter writer = null;
+            FileWriter writer = null;                                  //CREATE
             try {
                 writer = new FileWriter(FILE_PATH, true);
                 String studentData = student.toString();
