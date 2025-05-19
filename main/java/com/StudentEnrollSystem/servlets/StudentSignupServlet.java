@@ -16,7 +16,7 @@ public class StudentSignupServlet extends HttpServlet {
     private static final String FILE_PATH = "C:\\Users\\rasin\\Downloads\\project3\\StudentEnrollSystem\\src (9)\\src\\main\\webapp\\WEB-INF\\lib\\data\\students.txt";
     
     @Override
-    public void init() throws ServletException {
+    public void init() throws ServletException {  //CREATE
         super.init();
         // Ensure the directory exists
         try {
