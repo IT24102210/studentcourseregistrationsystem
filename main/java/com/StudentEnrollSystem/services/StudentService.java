@@ -26,7 +26,7 @@ public class StudentService {
      * Loads all users from students.txt into a list
      * @return List of Student objects
      */
-    private List<Student> loadUsersFromFile() {
+    private List<Student> loadUsersFromFile() {                       //READ
         List<Student> students = new ArrayList<>(); 
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
